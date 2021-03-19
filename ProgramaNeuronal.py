@@ -29,7 +29,7 @@ I=[[2,0,1,1,1],[3,0,0,0,2],[1,1,1,1,1],[3,1,1,1,2],[1,1,1,1,1]]
 In=np.array(I)
 
 
-IRGB=cv2.imread('R2D2.jpg')
+IRGB=cv2.imread('CACC007.jpg')
 IGS=cv2.cvtColor(IRGB,cv2.COLOR_BGR2GRAY)
 print(IGS.shape)
 
@@ -39,7 +39,7 @@ print(IGS.shape)
 R=convolucion(IGS,Kernel)
 print(R)
 print(R.shape)
-cv2.imwrite('R2D2C.jpg',R)
+cv2.imwrite('CACC007C.jpg',R)
 
 def maxpooling2(R):
     frm=(len(R)//2)
@@ -69,7 +69,7 @@ print(R2.shape)
 MX2= maxpooling2(R2)
 print(MX2)
 print(MX2.shape)
-cv2.imwrite('RSB R2D2.jpg',R)
+cv2.imwrite('RSB CACC007.jpg',R)
 
 
 
