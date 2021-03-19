@@ -7,6 +7,7 @@ def convolucion(Ioriginal,Kernel):
     Resultado=np.zeros((fr,cr),np.uint8)
     #For para recorrer filas
     for i in range(len(Resultado)):
+        #For para recorrer columnas
         for j in range(len(Resultado[0])):
             suma=0
             #hace las multiplicaciones y las suma
@@ -18,23 +19,24 @@ def convolucion(Ioriginal,Kernel):
             else:
                 Resultado[i][j]=255
     return Resultado
-#imagen artificial
+
+#imagenes
 K=[[-1,0,1],[-1,0,1],[-1,0,1]]
 I=[[2,0,1,1,1],[3,0,0,0,2],[1,1,1,1,1],[3,1,1,1,2],[1,1,1,1,1]]
 
-#imagenes a numpy array
+#imagenes a numpy arrays
 In=np.array(I)
 Kn=np.array(K)
 
-IRGB=cv2.imread('Ironman.jpg')
+IRGB=cv2.imread('')
 IGS=cv2.cvtColor(IRGB,cv2.COLOR_BGR2GRAY)
 print(IGS.shape)
+
+
 
 #funcion de convolucion
 R=convolucion(IGS,Kn)
 print(R)
 print(R.shape)
-cv2.imwrite('IronManC.jpg',R)
-
-#Max-pooling
+cv2.imwrite('',R)
 
