@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 #cargar la imagen a color
-IRGB=cv2.imread('010.jpg')
+IRGB=cv2.imread('Ironman.jpg')
 print(IRGB)
 print(IRGB.shape)
 print("Lineas agregadas en la rama2")
