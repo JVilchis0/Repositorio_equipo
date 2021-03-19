@@ -69,7 +69,8 @@ print(R2.shape)
 MX2= maxpooling2(R2)
 print(MX2)
 print(MX2.shape)
-cv2.imwrite('RSB R2D2.jpg',R)
+cv2.imwrite('RSBR2D2.jpg',MX2)
+
 
 
 
