@@ -79,7 +79,7 @@ print(MX2)
 print(MX2.shape)
 <<<<<<< HEAD
 <<<<<<< HEAD
-cv2.imwrite('RSB FJVO009.jpg',R)
+cv2.imwrite('RSB FJVO009.jpg',MX2)
 =======
 cv2.imwrite('RSBR2D2.jpg',MX2)
 
