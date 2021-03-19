@@ -37,8 +37,8 @@ print(R.shape)
 cv2.imwrite('IronmanC.jpg',R)
 
 #Max-pooling
-def maxpooling2(Ironman.jpg):
-    frm=len(Ironman.jpg)//2
-    crm=len(Ironman.jpg[0])//2
-    Resultado=np.zeros((frm,crm),np.units)
-
+def maxpooling2(R):
+    frm=len(R)//2
+    crm=len(R[0])//2
+    Resultado=np.zeros((frm,crm),np.uint8)
+    
